@@ -9,15 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var lbName:UILabel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //1.
         // Do any additional setup after loading the view, typically from a nib.
         print("hello,swift");
         //command+T
         let name:String="tong"
         let fullname=name+"xujun"
+        lbName?.text=fullname
         print(fullname)
+    
     }
 
     override func didReceiveMemoryWarning() {
